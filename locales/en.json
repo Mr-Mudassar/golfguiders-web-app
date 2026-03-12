@@ -1,0 +1,470 @@
+{
+  "settings": {
+    "label": "Settings",
+    "description": "Manage your account settings and set your preferences.",
+    "apps": "Apps",
+    "myApps": "My Apps",
+    "home": "Home",
+    "buddy": "Buddies",
+    "users": "Friends",
+    "friends": "My Friends",
+    "trophy": "Pro Leaderboard ",
+    "medal": "Play Tournament",
+    "gpt": "Guiders AI",
+    "bell": "Bag Traxx",
+    "scan-code": "Bag Traxx",
+    "golf-flag": "Play In Golf Course",
+    "Plane": "Trips",
+    "settings": "General",
+    "user-circle": "Profile",
+    "lock": "Change Password",
+    "user": "Blocked Users",
+    "logout": "Logout"
+  },
+  "generalSettings": {
+    "general": "General",
+    "customize": "Customize your setting to enhance your experience.",
+    "theme": "Theme",
+    "selectTheme": "Select a theme to change the look and feel of your application.",
+    "language": "Language",
+    "select": "Select the language of the application.",
+    "locale": "{locale, select, en {English} nl {Dutch} other {Unknown}}"
+  },
+  "profileSettings": {
+    "profile": "Profile",
+    "description": "This is how others will see you",
+    "upload": "Upload Photo",
+    "fName": "First Name",
+    "lName": "Last Name",
+    "coverProfilePhoto": {
+      "uploadCover": "Upload Cover Photo",
+      "noCover": "No Cover Photo",
+      "coverDescription": "Upload a cover photo to represent your profile.",
+      "uploadProfile": "Upload Profile Photo",
+      "profileDescription": "Attach a profile photo to represent your profile.",
+      "loading": "Uploading",
+      "button": "Upload",
+      "cancel": "Cancel"
+    },
+    "bio": {
+      "label": "Bio",
+      "description": "Tell us a little bit about yourself"
+    },
+    "address": {
+      "label": "Address",
+      "description": "Enter your address"
+    },
+    "city": {
+      "label": "City",
+      "description": "Select your city"
+    },
+    "country": {
+      "label": "Country",
+      "description": "Select your country"
+    },
+    "state": {
+      "label": "State",
+      "description": "Select your state"
+    },
+    "postalCode": {
+      "label": "Postal Code",
+      "description": "Enter your postal code"
+    },
+    "save": "Update Profile",
+    "success": "Profile updated successfully.",
+    "error": "Error updating profile."
+  },
+  "securitySettings": {
+    "security": "Change Password",
+    "description": "Update your security settings i.e passwords.",
+    "oldPass": {
+      "label": "Old Password",
+      "description": "Enter your current password to update your password."
+    },
+    "newPass": {
+      "label": "New Password",
+      "description": "Your new password must be at least 8 characters long."
+    },
+    "confirmPass": {
+      "label": "Confirm Password",
+      "description": "Your new password and confirm password must match."
+    },
+    "errors": {
+      "confirmPass": "Passwords do not match.",
+      "oldPass": "Old password is incorrect.",
+      "server": "Error updating password.",
+      "newPass": "New password must be different from the old password."
+    },
+    "success": "Password updated successfully.",
+    "save": "Update Password"
+  },
+  "blockedUserSettings": {
+    "title": "Block List",
+    "description": "Manage your block list",
+    "noUsers": "No blocked users found.",
+    "btn": "Unblock",
+    "loading": "Unblocking...",
+    "success": "{name} unblocked successfully.",
+    "error": "Error unblocking."
+  },
+  "homePage": {
+    "savePosts": "Saved Posts",
+    "favPosts": "Favorite Posts",
+    "invite": {
+      "label": "Invite Friends",
+      "description": "Invite friends and enjoy this experience of lifetime with your friends",
+      "descriptionmodal": "Tag your friend email/phone number to join the GolfGuiders.",
+      "btn": "Invite Now",
+      "sendinvite": "Send Invite"
+    },
+    "notification": {
+      "label": "Notification",
+      "message": "You have {count, plural, =0 {no unread notification} one {# unread notification} other {# unread notifications}}",
+      "noNotification": "No notifications found.",
+      "loadMore": "Load more"
+    },
+    "createStory": "Create a Story",
+    "createPost": {
+      "label": "Create Post",
+      "editLabel": "Edit a Post",
+      "dateFrom": "Starting date is required",
+      "dateTo": "Ending date is required",
+      "spotsVal": "Spots must be between 1 and 500",
+      "description": "What's on your mind?",
+      "visibility": {
+        "public": "Public",
+        "private": "Private",
+        "circle": "Circle"
+      },
+      "spots": "Spots",
+      "bgColor": "Select Background Color",
+      "emoji": "Select Feeling Emoji",
+      "media": "Upload Media",
+      "attach": "Attach",
+      "gc": {
+        "label": "Select a golf course",
+        "description": "Select a golf course to share your post with golfers and invite buddies to play there",
+        "searchName": "Search by name",
+        "noGC": "No golf courses found.",
+        "cancel": "Cancel",
+        "btn": "Select",
+        "reset": "Reset"
+      },
+      "toasts": {
+        "mediaLoading": "Uploading post media...",
+        "mediaFail": "Failed to upload post media.",
+        "successMedia": "Post media uploaded successfully.",
+        "successPost": "Post created successfully.",
+        "failPost": "An error occurred while creating post."
+      },
+      "zod": {
+        "spots": "Number of spots is required",
+        "gc": "Golf course is required",
+        "dateFrom": "Starting date is required",
+        "dateTo": "Ending date is required",
+        "spotsVal": "Spots must be between 1 and 500"
+      },
+      "inputFelid": "Express yourself!",
+      "btn": "Post",
+      "photoVideo": "Photo/Video",
+      "feeling": "Feeling",
+      "location": "Location"
+    },
+    "feed": "Feed",
+    "circle": "Circle"
+  },
+  "profilePage": {
+    "type": {
+      "coach": "Coach",
+      "trainer": "Trainer",
+      "golfer": "Golfer"
+    },
+    "addStory": "Add to Story",
+    "editProfile": "Edit Profile",
+    "share": {
+      "label": "Share",
+      "description": "Share on different social medias to get your friends to use GolfGuiders."
+    },
+    "posts": {
+      "readMore": "{isRead, select, less {Read Less} more {Read More} other {Read More}}",
+      "label": "Posts",
+      "shortLabel": "Post",
+      "isFeeling": "is feeling",
+      "likeBy": "Likes",
+      "shareBy": "Shared by",
+      "you": "Liked by You",
+      "youAndOther": "Liked by you and {count, plural, one {# other} other {# others}}",
+      "like": "{count, plural, =0 {Like} one {# Like} other {# Likes}}",
+      "toast": {
+        "success": "Request sent successfully!"
+      },
+      "join": "Join",
+      "joined": "Joined",
+      "shares": "{count} Shares",
+      "spots": "Spots"
+    },
+    "friends": {
+      "label": "Friends",
+      "shortLabel": "Friend",
+      "manage": {
+        "label": "Manage your network",
+        "home": "Home",
+        "users": "All Friends",
+        "user-check": "Request Sent"
+      },
+      "view": "View",
+      "message": "Message",
+      "searchName": "Search by name",
+      "removeFriend": {
+        "label": "Remove Friend",
+        "btn": "Removed",
+        "loading": "Removing...",
+        "success": "Friend removed successfully.",
+        "error": "Error removing friend.",
+        "confirm": {
+          "title": "Remove Friend",
+          "description": "Are you sure you want to remove this friend?",
+          "confirm": "Remove",
+          "cancel": "Cancel"
+        }
+      },
+      "blockFriend": {
+        "title": "Block List",
+        "subtitle": "List of users that are blocked by you",
+        "label": "Block",
+        "btn": "Blocked",
+        "loading": "Blocking...",
+        "success": "Friend blocked successfully.",
+        "error": "Error blocking friend.",
+        "confirm": {
+          "title": "Block User",
+          "description": "Are you sure you want to block this user? You won't be able to see each other's profiles or send messages.",
+          "confirm": "Block",
+          "cancel": "Cancel"
+        }
+      },
+      "addFriend": {
+        "label": "Add Friend",
+        "btn": "Requested",
+        "success": "Friend request sent.",
+        "error": "Error sending friend request.",
+        "loading": "Requesting..."
+      },
+      "reqReceive": {
+        "label": "Friends Requests",
+        "text": "No friend requests found.",
+        "accept": {
+          "label": "Accept",
+          "loading": "Accepting...",
+          "btn": "Friend Added",
+          "toast": "{name} has been added as your friend."
+        },
+        "reject": {
+          "label": "Reject",
+          "loading": "Rejecting...",
+          "btn": "Removed",
+          "toast": "Friend request from {name} has been rejected."
+        }
+      },
+      "requests": {
+        "label": "Your Sent Requests",
+        "description": "Requests sent by you",
+        "noRequests": "No friend requests found"
+      },
+      "requested": {
+        "label": "Cancel Request",
+        "btn": "Cancelled",
+        "success": "Friend request cancelled.",
+        "error": "Error cancelling friend request.",
+        "loading": "Cancelling..."
+      },
+      "knownPeople": {
+        "label": "People You May know",
+        "description": "You may be interested in these accounts",
+        "noKnown": "No recommendations found.",
+        "searchName": "Search by name",
+        "view": "View All",
+        "toast": "Friend request sent!"
+      },
+      "noFriends": "No friends found"
+    },
+    "viewAll": "View All",
+    "now": "Now",
+    "off": "Offline"
+  },
+  "savedFavPage": {
+    "viewBud": "View Buddy Requests",
+    "error": "Something went wrong. Please try again.",
+    "option": {
+      "edit": "Edit"
+    },
+    "saved": {
+      "title": "Saved Posts",
+      "noPosts": "No saved posts found.",
+      "add": {
+        "label": "Save",
+        "loading": "Saving...",
+        "toast": "Post saved successfully"
+      },
+      "remove": {
+        "label": "Unsave",
+        "loading": "Removing...",
+        "toast": "Post removed from your saved list"
+      }
+    },
+    "err": {
+      "add": "Can't add! try again later",
+      "remove": "Can't remove! try again later",
+      "loading": "Removing..."
+    },
+    "fav": {
+      "title": "Favorites Posts",
+      "noPosts": "No favorites posts found.",
+      "add": {
+        "label": "Added to favorites",
+        "loading": "Adding...",
+        "toast": "Post added to your favorites list"
+      },
+      "remove": {
+        "label": "Remove favorites",
+        "loading": "Removing...",
+        "toast": "Post removed from your favorites list"
+      }
+    },
+    "del": {
+      "title": "Delete",
+      "loading": "Deleting...",
+      "success": "Post Deleted successfully"
+    }
+  },
+  "noInternetPage": {
+    "title": "Oops! No Internet Connection",
+    "subtitle": "It looks like you're not connected to the internet. Don't worry, the world of golf is still waiting for you!",
+    "check": {
+      "label": "Checking connection status...",
+      "retry": "Checking connection and redirecting...",
+      "loading": "Checking Connection.."
+    },
+    "redirect": "Redirecting to {store}...",
+    "tryBtn": "Try Again",
+    "download": {
+      "title": "Try Our Mobile App",
+      "subtitle": "Get the full GolfGuiders experience even when your connection is spotty. Download our app for offline features!",
+      "apple": {
+        "label": "App Store",
+        "text": "Download on the"
+      },
+      "play": {
+        "label": "Google Play",
+        "text": "Get it on"
+      }
+    },
+    "wait": {
+      "label": "While you wait, try these tips:",
+      "tip1": "Check your WiFi connection",
+      "tip2": "Restart your router",
+      "tip3": "Try mobile data"
+    }
+  },
+  "notFoundPage": {
+    "title": "Oops! You're Off Course",
+    "subtitle": "Looks like this page took a detour into the rough. Don't worry, even            the pros miss the fairway sometimes!",
+    "redirect": "Redirecting to home in {count} seconds...",
+    "cancelAuto": "Cancel auto-redirect",
+    "back": {
+      "home": "Back to Home",
+      "prev": "Go Back"
+    },
+    "download": {
+      "title": "Try Our Mobile App",
+      "subtitle": "Get the full GolfGuiders experience even when your connection is spotty. Download our app for offline features!",
+      "apple": {
+        "label": "App Store",
+        "text": "Download on the"
+      },
+      "play": {
+        "label": "Google Play",
+        "text": "Get it on"
+      }
+    }
+  },
+  "loginPage": {
+    "title": "Sign in to your account",
+    "email": {
+      "zod": "Please fill in your email",
+      "label": "Email address",
+      "placeholder": "Enter your email"
+    },
+    "password": {
+      "zod": "Please fill in your password",
+      "label": "Password",
+      "length": "Password must be at least {length} characters",
+      "placeholder": "Enter your password"
+    },
+    "forgetBtn": "Forget Password?",
+    "btn": {
+      "label": "Sign in",
+      "loading": "Redirecting..."
+    },
+    "signUp": {
+      "label": "Not a member?",
+      "btn": "Register Now"
+    },
+    "toast": {
+      "success": "Logged in successfully!",
+      "error": "Something went wrong, either Invalid email or password"
+    }
+  },
+  "registerPage": {
+    "title": "Register a new account",
+    "fName": {
+      "label": "First Name",
+      "placeholder": "Enter first your name i.e John",
+      "zod": "Please fill in your first name"
+    },
+    "lName": {
+      "label": "Last Name",
+      "placeholder": "Enter last your name i.e Doe",
+      "zod": "Please fill in your last name"
+    },
+    "accType": {
+      "label": "Account Type",
+      "select": "Select account type",
+      "opt1": "Coach",
+      "opt2": "Golfer"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter email i.e. johndoe@gmail.com",
+      "zod": "Please fill in your email"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "Enter phone number",
+      "zod": "Please fill in your phone number"
+    },
+    "password": {
+      "label": "Password",
+      "length": "Password must be at least {length} characters",
+      "placeholder": "Enter your password"
+    },
+    "confirmPass": {
+      "label": "Confirm Password",
+      "placeholder": "Enter your password again"
+    },
+    "btn": {
+      "label": "Register",
+      "loading": "Registering..."
+    },
+    "login": {
+      "label": "Already have an account?",
+      "btn": "Login"
+    },
+    "error": {
+      "passMatch": "Passwords do not match",
+      "invalidPhone": "Invalid phone number!",
+      "noLocation": "Could not get your location. Please try again later",
+      "allowLocation": "Please allow location access to use this application. If you have already allowed it then click on the location icon on the address bar and allow it again."
+    }
+  }
+}

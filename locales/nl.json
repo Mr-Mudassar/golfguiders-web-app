@@ -1,0 +1,452 @@
+{
+  "settings": {
+    "label": "Instellingen",
+    "description": "Beheer je accountinstellingen en stel je voorkeuren in.",
+    "apps": "Apps",
+    "myApps": "Mijn Apps",
+    "home": "Home",
+    "buddy": "Buddies",
+    "users": "Vrienden",
+    "friends": "Mijn Vrienden",
+    "trophy": "Pro Toernooien",
+    "medal": "Lokale Toernooien",
+    "gpt": "Guiders AI",
+    "bell": "Bag Traxx",
+    "scan-code": "Bag Traxx",
+    "golf-flag": "Speel op Golfbaan",
+    "map": "Reizen",
+    "settings": "Algemeen",
+    "user-circle": "Profiel",
+    "lock": "Beveiliging",
+    "user": "Geblokkeerde Gebruikers",
+    "logout": "Uitloggen"
+  },
+  "generalSettings": {
+    "general": "Algemeen",
+    "customize": "Pas je instellingen aan voor een betere ervaring.",
+    "theme": "Thema",
+    "selectTheme": "Selecteer een thema om de uitstraling van de applicatie te veranderen.",
+    "language": "Taal",
+    "select": "Selecteer de taal van de applicatie.",
+    "locale": "{locale, select, en {Engels} nl {Nederlands} other {Onbekend}}"
+  },
+  "profileSettings": {
+    "profile": "Profiel",
+    "description": "Zo zien anderen jou",
+    "upload": "Foto uploaden",
+    "fName": "Voornaam",
+    "lName": "Achternaam",
+    "coverProfilePhoto": {
+      "uploadCover": "Coverfoto uploaden",
+      "noCover": "Geen coverfoto",
+      "coverDescription": "Upload een coverfoto voor je profiel.",
+      "uploadProfile": "Profielfoto uploaden",
+      "profileDescription": "Voeg een profielfoto toe.",
+      "loading": "Uploaden",
+      "button": "Uploaden",
+      "cancel": "Annuleren"
+    },
+    "bio": {
+      "label": "Bio",
+      "description": "Vertel iets over jezelf"
+    },
+    "address": {
+      "label": "Adres",
+      "description": "Voer je adres in"
+    },
+    "city": {
+      "label": "Stad",
+      "description": "Selecteer je stad"
+    },
+    "country": {
+      "label": "Land",
+      "description": "Selecteer je land"
+    },
+    "state": {
+      "label": "Provincie",
+      "description": "Selecteer je provincie"
+    },
+    "postalCode": {
+      "label": "Postcode",
+      "description": "Voer je postcode in"
+    },
+    "save": "Profiel bijwerken",
+    "success": "Profiel succesvol bijgewerkt.",
+    "error": "Fout bij bijwerken profiel."
+  },
+  "securitySettings": {
+    "security": "Beveiliging",
+    "description": "Werk je beveiligingsinstellingen bij, zoals wachtwoorden.",
+    "oldPass": {
+      "label": "Oud wachtwoord",
+      "description": "Voer je huidige wachtwoord in om je wachtwoord bij te werken."
+    },
+    "newPass": {
+      "label": "Nieuw wachtwoord",
+      "description": "Je nieuwe wachtwoord moet minstens 8 tekens lang zijn."
+    },
+    "confirmPass": {
+      "label": "Bevestig wachtwoord",
+      "description": "Je nieuwe wachtwoord en bevestigingswachtwoord moeten overeenkomen."
+    },
+    "errors": {
+      "confirmPass": "Wachtwoorden komen niet overeen.",
+      "oldPass": "Oud wachtwoord is incorrect.",
+      "server": "Fout bij bijwerken wachtwoord.",
+      "newPass": "Nieuw wachtwoord moet verschillen van het oude wachtwoord."
+    },
+    "success": "Wachtwoord succesvol bijgewerkt.",
+    "save": "Wachtwoord bijwerken"
+  },
+  "blockedUserSettings": {
+    "title": "Blokkeerlijst",
+    "description": "Beheer je blokkeerlijst",
+    "noUsers": "Geen geblokkeerde gebruikers gevonden.",
+    "btn": "Deblokkeren",
+    "loading": "Deblokkeren...",
+    "success": "{name} succesvol gedeblokkeerd.",
+    "error": "Fout bij deblokkeren."
+  },
+  "homePage": {
+    "savePosts": "Opgeslagen Berichten",
+    "favPosts": "Favoriete Berichten",
+    "invite": {
+      "label": "Vrienden uitnodigen",
+      "description": "Nodig vrienden uit en geniet samen van deze ervaring",
+      "descriptionmodal": "Tag your friend email/phone number to join the GolfGuiders.",
+      "btn": "Nu uitnodigen",
+      "sendinvite": "Send Invite"
+    },
+    "notification": {
+      "label": "Notificaties",
+      "message": "Je hebt {count, plural, =0 {geen ongelezen meldingen} one {# ongelezen melding} other {# ongelezen meldingen}}.",
+      "noNotification": "Geen notificaties gevonden.",
+      "loadMore": "Meer laden"
+    },
+    "createStory": "Maak een Story",
+    "createPost": {
+      "label": "Maak een Bericht",
+      "description": "Wat denk je nu?",
+      "visibility": {
+        "public": "Publiek",
+        "private": "Privé",
+        "circle": "Cirkel"
+      },
+      "spots": "Plekken",
+      "bgColor": "Selecteer Achtergrondkleur",
+      "emoji": "Selecteer Emoji",
+      "media": "Media uploaden",
+      "attach": "Bijvoegen",
+      "gc": {
+        "label": "Selecteer een golfbaan",
+        "description": "Selecteer een golfbaan om je bericht te delen en buddies uit te nodigen",
+        "searchName": "Zoek op naam",
+        "noGC": "Geen golfbanen gevonden.",
+        "cancel": "Annuleren",
+        "btn": "Selecteren",
+        "reset": "Resetten"
+      },
+      "toasts": {
+        "mediaLoading": "Berichtmedia wordt geüpload...",
+        "mediaFail": "Uploaden media mislukt.",
+        "successMedia": "Media succesvol geüpload.",
+        "successPost": "Bericht succesvol aangemaakt.",
+        "failPost": "Fout bij aanmaken bericht."
+      },
+      "zod": {
+        "spots": "Aantal plekken is vereist",
+        "gc": "Golfbaan is vereist",
+        "dateFrom": "Startdatum is vereist",
+        "dateTo": "Einddatum is vereist"
+      },
+      "inputFelid": "Druk jezelf uit!",
+      "btn": "Plaatsen"
+    },
+    "feed": "Feed",
+    "circle": "Cirkel"
+  },
+  "profilePage": {
+    "type": {
+      "coach": "Coach",
+      "trainer": "Trainer",
+      "golfer": "Golfer"
+    },
+    "addStory": "Toevoegen aan Story",
+    "editProfile": "Profiel bewerken",
+    "share": {
+      "label": "Delen",
+      "description": "Deel op sociale media om vrienden te laten meegenieten."
+    },
+    "posts": {
+      "readMore": "{isRead, select, less {Minder lezen} more {Meer lezen} other {Meer lezen}}",
+      "label": "Berichten",
+      "shortLabel": "Bericht",
+      "isFeeling": "voelt zich",
+      "likeBy": "Vind-ik-leuks",
+      "shareBy": "Gedeeld door",
+      "you": "Jij vindt dit leuk",
+      "youAndOther": "Jij en {count, plural, one {# ander} other {# anderen}} vinden dit leuk",
+      "like": "{count, plural, =0 {Vind ik leuk} one {# Vind ik leuk} other {# Vind-ik-leuks}}",
+      "toast": {
+        "success": "Verzoek succesvol verzonden!"
+      },
+      "join": "Deelnemen",
+      "joined": "Deelgenomen",
+      "shares": "{count} Keer gedeeld",
+      "spots": "Plekken"
+    },
+    "friends": {
+      "label": "Vrienden",
+      "shortLabel": "Vriend",
+      "manage": {
+        "label": "Beheer je netwerk",
+        "home": "Home",
+        "users": "Alle Vrienden",
+        "user-check": "Verzoek Verzonden"
+      },
+      "view": "Bekijken",
+      "message": "Bericht",
+      "searchName": "Zoek op naam",
+      "removeFriend": {
+        "label": "Vriend verwijderen",
+        "btn": "Verwijderd",
+        "loading": "Verwijderen...",
+        "success": "Vriend succesvol verwijderd.",
+        "error": "Fout bij verwijderen vriend."
+      },
+      "blockFriend": {
+        "title": "Blokkeerlijst",
+        "subtitle": "Lijst van door jou geblokkeerde gebruikers",
+        "label": "Blokkeren",
+        "btn": "Geblokkeerd",
+        "loading": "Blokkeren...",
+        "success": "Vriend succesvol geblokkeerd.",
+        "error": "Fout bij blokkeren vriend."
+      },
+      "addFriend": {
+        "label": "Vriend toevoegen",
+        "btn": "Verzocht",
+        "success": "Vriendschapsverzoek verzonden.",
+        "error": "Fout bij verzenden verzoek.",
+        "loading": "Verzoeken..."
+      },
+      "reqReceive": {
+        "label": "Vriendschapsverzoeken",
+        "text": "Geen verzoeken gevonden.",
+        "accept": {
+          "label": "Accepteren",
+          "loading": "Accepteren...",
+          "btn": "Vriend toegevoegd",
+          "toast": "{name} is toegevoegd als vriend."
+        },
+        "reject": {
+          "label": "Weigeren",
+          "loading": "Weigeren...",
+          "btn": "Verwijderd",
+          "toast": "Verzoek van {name} is geweigerd."
+        }
+      },
+      "requests": {
+        "label": "Verzonden Verzoeken",
+        "description": "Door jou verzonden verzoeken.",
+        "noRequests": "Geen verzoeken gevonden."
+      },
+      "requested": {
+        "label": "Verzoek annuleren",
+        "btn": "Geannuleerd",
+        "success": "Verzoek geannuleerd.",
+        "error": "Fout bij annuleren verzoek.",
+        "loading": "Annuleren..."
+      },
+      "knownPeople": {
+        "label": "Mogelijke Kennissen",
+        "description": "Misschien vind je deze accounts interessant",
+        "noKnown": "Geen suggesties gevonden.",
+        "searchName": "Zoek op naam",
+        "view": "Alles bekijken",
+        "toast": "Vriendschapsverzoek verzonden!"
+      },
+      "noFriends": "Geen vrienden gevonden"
+    },
+    "viewAll": "Alles bekijken",
+    "now": "Nu",
+    "off": "Offline"
+  },
+  "savedFavPage": {
+    "viewBud": "Bekijk Buddy Verzoeken",
+    "error": "Er is iets misgegaan. Probeer het later opnieuw.",
+    "option": {
+      "edit": "Bewerken"
+    },
+    "saved": {
+      "title": "Opgeslagen Berichten",
+      "noPosts": "Geen opgeslagen berichten gevonden.",
+      "add": {
+        "label": "Opslaan",
+        "loading": "Opslaan...",
+        "toast": "Bericht succesvol opgeslagen"
+      },
+      "remove": {
+        "label": "Verwijderen",
+        "loading": "Verwijderen...",
+        "toast": "Bericht verwijderd uit opgeslagen lijst"
+      }
+    },
+    "err": {
+      "add": "Kan niet toevoegen! Probeer later opnieuw",
+      "remove": "Kan niet verwijderen! Probeer later opnieuw",
+      "loading": "Verwijderen..."
+    },
+    "fav": {
+      "title": "Favoriete Berichten",
+      "noPosts": "Geen favoriete berichten gevonden.",
+      "add": {
+        "label": "Toegevoegd aan favorieten",
+        "loading": "Toevoegen...",
+        "toast": "Bericht toegevoegd aan favorieten"
+      },
+      "remove": {
+        "label": "Verwijder uit favorieten",
+        "loading": "Verwijderen...",
+        "toast": "Bericht verwijderd uit favorieten"
+      }
+    },
+    "del": {
+      "title": "Verwijderen",
+      "loading": "Verwijderen...",
+      "success": "Bericht succesvol verwijderd"
+    }
+  },
+  "noInternetPage": {
+    "title": "Oeps! Geen Internetverbinding",
+    "subtitle": "Het lijkt erop dat je niet verbonden bent met internet. Geen zorgen, de golfwereld wacht nog steeds op je!",
+    "check": {
+      "label": "Controleren verbinding...",
+      "retry": "Controleren en doorverwijzen...",
+      "loading": "Controleren verbinding..."
+    },
+    "redirect": "Doorverwijzen naar {store}...",
+    "tryBtn": "Probeer opnieuw",
+    "download": {
+      "title": "Probeer onze App",
+      "subtitle": "Krijg de volledige GolfGuiders ervaring, zelfs zonder verbinding. Download onze app!",
+      "apple": {
+        "label": "App Store",
+        "text": "Download in de"
+      },
+      "play": {
+        "label": "Google Play",
+        "text": "Download in de"
+      }
+    },
+    "wait": {
+      "label": "Terwijl je wacht, probeer dit:",
+      "tip1": "Controleer je WiFi verbinding",
+      "tip2": "Herstart je router",
+      "tip3": "Probeer mobiele data"
+    }
+  },
+  "notFoundPage": {
+    "title": "Oeps! Je bent van de baan af",
+    "subtitle": "Het lijkt erop dat deze pagina in de rough is beland. Geen zorgen, zelfs de professionals slaan wel eens mis!",
+    "redirect": "Doorverwijzen naar home over {count} seconden...",
+    "cancelAuto": "Annuleer automatische doorverwijzing",
+    "back": {
+      "home": "Terug naar Home",
+      "prev": "Ga terug"
+    },
+    "download": {
+      "title": "Probeer onze App",
+      "subtitle": "Krijg de volledige GolfGuiders ervaring, zelfs zonder verbinding. Download onze app!",
+      "apple": {
+        "label": "App Store",
+        "text": "Download in de"
+      },
+      "play": {
+        "label": "Google Play",
+        "text": "Download in de"
+      }
+    }
+  },
+  "loginPage": {
+    "title": "Log in op je account",
+    "email": {
+      "zod": "Vul je email in",
+      "label": "Emailadres",
+      "placeholder": "Voer je email in"
+    },
+    "password": {
+      "zod": "Vul je wachtwoord in",
+      "label": "Wachtwoord",
+      "length": "Wachtwoord moet minstens {length} tekens zijn",
+      "placeholder": "Voer je wachtwoord in"
+    },
+    "forgetBtn": "Wachtwoord vergeten?",
+    "btn": {
+      "label": "Inloggen",
+      "loading": "Doorverwijzen..."
+    },
+    "signUp": {
+      "label": "Nog geen lid?",
+      "btn": "Registreer nu"
+    },
+    "toast": {
+      "success": "Succesvol ingelogd!",
+      "error": "Er ging iets mis, ongeldige email of wachtwoord"
+    }
+  },
+  "registerPage": {
+    "title": "Registreer een nieuw account",
+    "fName": {
+      "label": "Voornaam",
+      "placeholder": "Voer je voornaam in, bv. Jan",
+      "zod": "Vul je voornaam in"
+    },
+    "lName": {
+      "label": "Achternaam",
+      "placeholder": "Voer je achternaam in, bv. Jansen",
+      "zod": "Vul je achternaam in"
+    },
+    "accType": {
+      "label": "Accounttype",
+      "select": "Selecteer accounttype",
+      "options": [
+        "Coach",
+        "Golfer"
+      ]
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "Voer e-mail in, bv. janjansen@gmail.com",
+      "zod": "Vul je e-mail in"
+    },
+    "phone": {
+      "label": "Telefoonnummer",
+      "placeholder": "Voer telefoonnummer in",
+      "zod": "Vul je telefoonnummer in"
+    },
+    "password": {
+      "label": "Wachtwoord",
+      "length": "Wachtwoord moet minstens {length} tekens zijn",
+      "placeholder": "Voer je wachtwoord in"
+    },
+    "confirmPass": {
+      "label": "Bevestig wachtwoord",
+      "placeholder": "Voer je wachtwoord nogmaals in"
+    },
+    "btn": {
+      "label": "Registreren",
+      "loading": "Bezig met registreren..."
+    },
+    "login": {
+      "label": "Heb je al een account?",
+      "btn": "Inloggen"
+    },
+    "error": {
+      "passMatch": "Wachtwoorden komen niet overeen",
+      "invalidPhone": "Ongeldig telefoonnummer!",
+      "noLocation": "Kon je locatie niet bepalen. Probeer het later opnieuw",
+      "allowLocation": "Sta locatietoegang toe om deze applicatie te gebruiken. Als je dit al hebt toegestaan, klik dan op het locatie-icoon in de adresbalk en sta het opnieuw toe."
+    }
+  }
+}

@@ -1,0 +1,340 @@
+@config "../../../tailwind.config.ts";
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --gradient: #188b7f;
+
+    --background: 174 15% 98.5%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 174 71% 32%;
+    --primary-foreground: 174 2% 92.5%;
+    --primary-tap: 174 71% 27%;
+
+    --secondary: 174 20% 94%;
+    --secondary-foreground: 174 91% 12%;
+
+    --accent: 0 0% 95%;
+    --accent-foreground: 174 71% 32%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 174 71% 32%;
+
+    --radius: 0.75rem;
+
+    /* Professional Design Tokens - Softer borders, shadows, and focus states */
+    --border-light: 214.3 31.8% 91.4% / 0.3;
+    --border-ultra-light: 214.3 31.8% 91.4% / 0.15;
+    --shadow-soft: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-soft-md: 0 2px 4px -1px rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+    --shadow-soft-lg: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    --focus-ring-width: 1px;
+    --focus-ring-offset: 0px;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-sans), "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    transition:
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Disable transitions when theme is switching to avoid "jerk" */
+  .disable-transitions * {
+    transition: none !important;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 9999;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Ffilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+}
+
+@layer utilities {
+  .pretty-scrollbar {
+    @apply scrollbar-thin scrollbar-thumb-accent scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-corner-transparent;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-glow {
+    background: radial-gradient(
+      circle at 50% 50%,
+      hsl(var(--primary) / 0.15) 0%,
+      transparent 50%
+    );
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent;
+  }
+
+  .text-primary-gradient {
+    @apply bg-gradient-to-r from-primary to-[#3bbbb0] bg-clip-text text-transparent;
+  }
+
+  .btn-primary-gradient {
+    @apply bg-gradient-to-r from-[#188b7f] to-[#136d64] text-white font-semibold hover:opacity-90 transition-opacity;
+  }
+}
+
+.prose * {
+  @apply m-0;
+}
+
+/* External Packages Style configuration */
+
+.epr-main {
+  background-color: hsla(var(--popover)) !important;
+}
+
+.epr-search-container {
+  border: 1px solid hsla(var(--border)) !important;
+  border-radius: 4px;
+}
+
+.epr-search-container > input {
+  background: hsla(var(--background) / 0.3) !important;
+}
+
+.epr-emoji-category-label {
+  background: hsla(var(--background) / 0.3) !important;
+}
+
+/* React Phone Number Input */
+.PhoneInputInput {
+  width: 100%;
+}
+
+.flag-wrapper > svg {
+  width: 100% !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* scrollbar styles */
+/* Hide horizontal scrollbar completely */
+.scrollbar-hidden {
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+textarea {
+  outline: none;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:focus {
+  border-color: hsl(var(--primary) / 0.4);
+  box-shadow: 0 0 0 1px hsl(var(--primary) / 0.06);
+  outline: none;
+}
+
+textarea:hover {
+  border-color: hsl(var(--primary) / 0.2);
+}
+
+/* GLOBAL SCROLLBAR STYLING */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--accent)) white;
+}
+
+/* WebKit Browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--accent));
+  border-radius: 4px;
+  border: 2px solid hsl(var(--background));
+  /* Optional: creates a gap around thumb */
+}
+
+/* Enhanced design improvements - Professional, subtle approach */
+@layer utilities {
+  /* Subtle glow effect for primary green - reduced intensity */
+  .glow-primary {
+    box-shadow:
+      0 0 12px hsl(var(--primary) / 0.08),
+      0 0 24px hsl(var(--primary) / 0.04);
+  }
+
+  .glow-primary-sm {
+    box-shadow:
+      0 0 8px hsl(var(--primary) / 0.06),
+      0 0 16px hsl(var(--primary) / 0.03);
+  }
+
+  /* Softer card shadows - professional grade */
+  .card-shadow {
+    box-shadow:
+      0 1px 2px 0 rgb(0 0 0 / 0.05),
+      0 1px 1px -1px rgb(0 0 0 / 0.04);
+  }
+
+  .card-shadow-lg {
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.08),
+      0 2px 4px -2px rgb(0 0 0 / 0.05);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Button hover effects - subtle lift */
+  .btn-hover-lift {
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .btn-hover-lift:hover {
+    transform: translateY(-0.5px);
+    box-shadow: 0 2px 8px hsl(var(--primary) / 0.12);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 24s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-shine-slow {
+    animation: shine 32s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .animate-card-enter {
+    animation: cardEnter 500ms ease-out both;
+  }
+
+  @keyframes cardEnter {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shine {
+    0%,
+    100% {
+      opacity: 0.15;
+      transform: translateY(0) translateX(0) scale(1);
+      filter: blur(100px);
+    }
+    50% {
+      opacity: 0.3;
+      transform: translateY(-60px) translateX(20px) scale(1.1);
+      filter: blur(120px);
+    }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  @apply appearance-none;
+  margin: 0;
+}
